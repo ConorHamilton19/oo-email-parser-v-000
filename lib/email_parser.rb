@@ -11,7 +11,7 @@ class EmailParser
   end
 
   def parse 
-  @email.split.collect {|a| a.split(",")}
+  @email.split.select {|a| a.split(",")}
   
   end 
   
